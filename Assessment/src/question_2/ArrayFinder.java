@@ -15,6 +15,10 @@ import java.util.List;
 public class ArrayFinder {
 	//This method accepts an unordered list of arrays and an integer
 	public static void findArrayWithTarget(List<int[]> list, int target){
+		if(list.size()==0) {
+			System.out.println("Your List is EMPTY");
+			return;
+		}
 		List<int[]> temp = new ArrayList<>(); // to get multiple arrays with provided target number
 		for(int[] array : list) {
 			for(int element:array) {
